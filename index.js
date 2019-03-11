@@ -1,10 +1,14 @@
+let ip = require('ip');
 var express = require('express');
 var socket = require('socket.io');
 
 // App setup
 var app = express();
-var server = app.listen(4000, function(){
-    console.log('listening for requests on port 4000');
+var server = app.listen(4000, '0.0.0.0', function(){
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log(`listening for requests on ${host}:${port}`);
+  console.log(`listening for requests on ${ip.address()}:${port}`);
 });
 
 // Static files

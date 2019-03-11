@@ -4,14 +4,17 @@
   "description": "A chat app using WebSockets",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/ULL-ESIT-DSI-1819/websockets-playlist.git"
   },
   "author": "The Net Ninja",
-  "contributors": ["Casiano Rodriguez-Leon"],
+  "contributors": [
+    "Casiano Rodriguez-Leon"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ULL-ESIT-DSI-1819/websockets-playlist/issues"
@@ -19,6 +22,7 @@
   "homepage": "https://github.com/ULL-ESIT-DSI-1819/websockets-playlist/blob/master/README.md",
   "dependencies": {
     "express": "^4.16.4",
+    "ip": "^1.1.5",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
